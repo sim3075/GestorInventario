@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<main>
+
+    <section>
+        <app-search-producto (productoEvent)="receiveProductos($event)"></app-search-producto>
+    </section>
+
+    @for (producto of productos; track $index) {
+
+    <ul>
+        <img [src]="producto.imagen" alt="Imagen del producto" />
+        <li> Nombre: {{producto.nombre}}</li>
+        <li> Precio: {{producto.precio}}</li>
+        <li> Categoría: {{producto.categoria}}</li>
+        <li> Descripción: {{producto.descripcion}}</li>
+        <button type="submit" (click)="verProducto(producto.id!)">Ver producto</button>
+        <button type="submit" (click)="eliminarProducto(producto.id!)">Eliminar producto</button>
+        <button type="submit" (click)="actualizarProducto(producto.id!, producto.id_tienda)">Actualizar</button>
+    </ul>
+
+    }@empty {
+    <h1> No hay productos disponibles</h1>
+    }
+
+</main>
+
+<app-footer></app-footer>

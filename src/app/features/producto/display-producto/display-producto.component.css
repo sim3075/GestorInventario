@@ -1,0 +1,123 @@
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section {
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+section h1{
+    color: #333;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+
+.product-details {
+    flex: 1;
+    text-align: left;
+}
+
+.product-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+
+}
+
+.product-details ul li:last-child {
+    border-bottom: none;
+}
+
+.product-details ul li h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-image {
+    max-width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+button[type="submit"] {
+    background: linear-gradient(90deg, #2f9c56, #56abda);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 20%;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+
+h1 {
+    font-size: 22px;
+    color: #2f9c56;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}

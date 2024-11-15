@@ -1,0 +1,129 @@
+/* Estilos principales para el layout */
+main {
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+section {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid #219ebc; /* Borde azul */
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul li img {
+  border-radius: 5px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+img {
+  width: 250px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 22px;
+  color: #219ebc; /* Color azul para el título */
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+button[type="submit"] {
+  background: linear-gradient(90deg, #219ebc, #56abda); /* Gradiente azul */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.8;
+  background: linear-gradient(90deg, #56abda, #219ebc); /* Cambio de gradiente en hover */
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  main {
+      padding: 10px;
+  }
+
+  section {
+      padding: 10px;
+  }
+
+  app-search-producto input[type="text"],
+  app-search-producto button {
+      max-width: 100%;
+  }
+
+  ul li {
+      font-size: 14px;
+  }
+
+  h1 {
+      font-size: 18px;
+  }
+}

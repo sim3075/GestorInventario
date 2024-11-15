@@ -1,0 +1,33 @@
+<form (ngSubmit)="onSubmit()" class="search-bar">
+
+  <input
+    [(ngModel)]="busqueda.nombre"
+    name="nombre"
+    type="text"
+    placeholder="Nombre del producto"
+    class="search-input">
+
+  <input
+    [(ngModel)]="busqueda.categoria"
+    name="categoria"
+    type="text"
+    placeholder="Categoría"
+    class="search-input">
+
+  <input
+    [(ngModel)]="busqueda.minPrecio"
+    name="min-precio"
+    type="number"
+    placeholder="Precio mínimo"
+    class="search-input">
+
+  <input
+    [(ngModel)]="busqueda.maxPrecio"
+    name="max-precio"
+    type="number"
+    placeholder="Precio máximo"
+    class="search-input">
+
+  <button type="submit" class="search-button">Buscar</button>
+
+</form>

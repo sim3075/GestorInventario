@@ -1,0 +1,24 @@
+/* Footer Styles */
+.footer {
+  background-color: #003366; /* Azul predominante */
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 0.8rem;
+  }
+}
